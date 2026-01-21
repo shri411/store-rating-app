@@ -32,7 +32,7 @@ const Signup = () => {
         try {
             const res = await API.post('/auth/signup', formData);
             
-            // Logic Fix: res.data.msg matches your backend key
+            // Logic Fix: res.data.msg matches backend key
             alert(res.data.msg || "Registration successful!"); 
             navigate('/login');
         } catch (err) {

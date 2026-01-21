@@ -14,7 +14,7 @@ const UserDashboard = () => {
 
    const fetchStores = async () => {
     try {
-        // CHANGE THIS LINE from /admin/stores to /stores/all
+        
         const res = await API.get('/stores/all'); 
         console.log("Stores fetched successfully:", res.data);
         setStores(res.data);
